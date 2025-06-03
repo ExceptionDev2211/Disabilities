@@ -21,3 +21,17 @@
 .input_group input:focus {
   border-color: #2563eb;
 }
+.input_group select {
+  padding: 0.6rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+  background-color: white;
+  color: #374151;
+}
+
+.input_group select:focus {
+  border-color: #2563eb;
+}

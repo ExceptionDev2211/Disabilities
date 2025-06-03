@@ -13,8 +13,6 @@ const Login = () => {
           <Button children={"Ingresar"} type='submit'/>          
           <Link to="/register">Registrarse</Link>
         </form>
-
-
     </div>
   )
 }
