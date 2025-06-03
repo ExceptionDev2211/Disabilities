@@ -1,0 +1,138 @@
+.disabilitiesPageContainer {
+  padding: 20px;
+}
+
+.disabilitiesHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.disabilitiesHeader h2 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.btnPrimary {
+  background-color: #007bff;
+  color: white;
+}
+.btnPrimary:hover {
+  background-color: #0056b3;
+}
+
+.btnEdit {
+  background-color: #ffc107;
+  color: black;
+  margin-right: 0.5rem;
+  padding: 0.35rem 0.7rem;
+}
+.btnEdit:hover {
+  background-color: #e0a800;
+}
+
+.btnDelete {
+  background-color: #dc3545;
+  color: white;
+  padding: 0.35rem 0.7rem;
+}
+.btnDelete:hover {
+  background-color: #c82333;
+}
+
+.filtersContainer {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  align-items: center;
+}
+
+.filterGroup label {
+  margin-right: 0.5rem;
+  font-weight: 500;
+}
+
+.filterGroup select,
+.filterGroup input[type="text"] {
+  padding: 0.6rem;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  min-width: 200px;
+}
+
+.disabilitiesTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.disabilitiesTable th,
+.disabilitiesTable td {
+  border: 1px solid #dee2e6;
+  padding: 0.75rem;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.disabilitiesTable thead tr {
+  background-color: #e9ecef;
+  color: #495057;
+}
+
+.disabilitiesTable tbody tr:nth-child(odd) {
+  background-color: #f8f9fa;
+}
+.disabilitiesTable tbody tr:hover {
+  background-color: #f1f3f5;
+}
+
+.statusBadge {
+  padding: 0.35rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  display: inline-block;
+  color: #fff;
+}
+
+.statusCompletado {
+  background-color: #28a745;
+  color: white;
+}
+
+.statusEnCurso {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+.statusPendiente {
+  background-color: #dc3545;
+  color: white;
+}
+
+.noDisabilitiesMessage {
+  text-align: center;
+  padding: 2rem;
+  font-style: italic;
+  color: #6c757d;
+}
+
+.actionsCell button, .actionsCell a {
+  margin-right: 0.5rem;
+}
+.actionsCell button:last-child, .actionsCell a:last-child {
+  margin-right: 0;
+}

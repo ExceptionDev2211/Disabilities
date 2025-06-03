@@ -1,6 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from "./Register.module.css";
+import Button from '../../components/Button/Button.jsx';
+import Input from '../../components/Input/Input.jsx';
+
 
 const Register = () => {
   return (
@@ -8,35 +11,15 @@ const Register = () => {
       <div className={styles.register_card}>
         <h2>Registro</h2>
         <form>
-          <div>
-            <label htmlFor="username">Usuario:</label>
-            <input type="text" id="username" name="username" required />
-          </div>
-          <div>
-            <label htmlFor="email">Correo:</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-          <div>
-            <label htmlFor="password">Contraseña:</label>
-            <input type="password" id="password" name="password" required />
-          </div>
-          <div>
-            <label htmlFor="firstName">Nombres:</label>
-            <input type="text" id="firstName" name="firstName" required />
-          </div>
-          <div>
-            <label htmlFor="lastName">Apellidos:</label>
-            <input type="text" id="lastName" name="lastName" required />
-          </div>
-          <div>
-            <label htmlFor="documentType">Tipo de documento:</label>
-            <input type="text" id="documentType" name="documentType" required />
-          </div>
-          <div>
-            <label htmlFor="documentNumber">N° de documento:</label>
-            <input type="text" id="documentNumber" name="documentNumber" required />
-          </div>          
-          <button type="submit">Registrarse</button>
+          <Input label="Usuario" id="username" name="username" required />
+          <Input label="Correo" id="email" type="email" name="email" required />
+          <Input label="Contraseña" id="password" type="password" name="password" required />
+          <Input label="Nombres" id="firstName" name="firstName" required />
+          <Input label="Apellidos" id="lastName" name="lastName" required />
+          <Input label="Tipo de documento" id="documentType" name="documentType" required />
+          <Input label="N° de documento" id="documentNumber" name="documentNumber" required />
+
+          <Button type="submit">Registrarse</Button>
         </form>
         <p>¿Ya tienes una cuenta? <Link to="/">Ingresa aquí</Link></p>
       </div>

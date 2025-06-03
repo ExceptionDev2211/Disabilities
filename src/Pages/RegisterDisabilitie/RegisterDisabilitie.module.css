@@ -1,0 +1,99 @@
+.formContainer {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.formContainer h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333;
+  font-size: 1.8rem;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.formField {
+  display: flex;
+  flex-direction: column;
+}
+
+.formField label {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #555;
+}
+
+.formField input[type="text"],
+.formField input[type="number"],
+.formField input[type="email"],
+.formField input[type="tel"],
+.formField input[type="date"],
+.formField select {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.formField input:focus,
+.formField select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.formActions {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.6rem 1.2rem; 
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.btnPrimary {
+  background-color: #28a745;
+  color: white;
+}
+.btnPrimary:hover {
+  background-color: #218838;
+}
+
+.btnSecondary {
+  background-color: #6c757d; 
+  color: white;
+}
+.btnSecondary:hover {
+  background-color: #5a6268;
+}
+
+.fullWidth {
+  grid-column: 1 / -1; 
+}
+
+.formField input:disabled,
+.formField select:disabled {
+  background-color: #e9ecef;
+  opacity: 1; 
+  cursor: not-allowed;
+}
